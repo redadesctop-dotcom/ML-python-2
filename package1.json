@@ -1,0 +1,130 @@
+{
+  "name": "eai-agent-chat",
+  "displayName": "eAI Agent Chat",
+  "description": "Evolutionary AI agent system integrated into VS Code sidebar",
+  "version": "2.0.0",
+  "publisher": "eai-team",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["AI", "Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "icon": "media/icon.png",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "eaiSidebar",
+          "title": "eAI Agent",
+          "icon": "media/robot.svg"
+        }
+      ]
+    },
+    "views": {
+      "eaiSidebar": [
+        {
+          "type": "webview",
+          "id": "eaiChatView",
+          "name": "Chat",
+          "retainContextWhenHidden": true
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "eai.openChat",
+        "title": "eAI: Open Chat",
+        "icon": "$(comment-discussion)"
+      },
+      {
+        "command": "eai.clearMemory",
+        "title": "eAI: Clear Memory & History"
+      },
+      {
+        "command": "eai.injectContext",
+        "title": "eAI: Inject Project Context"
+      },
+      {
+        "command": "eai.applyLastEdit",
+        "title": "eAI: Apply Last Suggested Edit"
+      },
+      {
+        "command": "eai.explainSelection",
+        "title": "eAI: Explain Selected Code"
+      },
+      {
+        "command": "eai.refactorSelection",
+        "title": "eAI: Refactor Selected Code"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "eai.explainSelection",
+          "when": "editorHasSelection",
+          "group": "eai@1"
+        },
+        {
+          "command": "eai.refactorSelection",
+          "when": "editorHasSelection",
+          "group": "eai@2"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "eai.openChat",
+        "key": "ctrl+shift+e",
+        "mac": "cmd+shift+e"
+      },
+      {
+        "command": "eai.clearMemory",
+        "key": "ctrl+shift+alt+c",
+        "mac": "cmd+shift+alt+c"
+      }
+    ],
+    "configuration": {
+      "title": "eAI Agent",
+      "properties": {
+        "eai.backendUrl": {
+          "type": "string",
+          "default": "http://localhost:8000",
+          "description": "eAI backend URL"
+        },
+        "eai.defaultModelTier": {
+          "type": "string",
+          "enum": ["3b", "14b", "32b"],
+          "default": "14b",
+          "description": "Default local model tier"
+        },
+        "eai.maxContextMessages": {
+          "type": "number",
+          "default": 10,
+          "description": "Max messages kept in sliding context window"
+        },
+        "eai.streamingEnabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable streaming responses"
+        },
+        "eai.injectProjectContext": {
+          "type": "boolean",
+          "default": true,
+          "description": "Auto-inject project context (package.json, tsconfig, etc.)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "install-ext": "code --install-extension eai-agent-chat-2.0.0.vsix"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^2.22.0",
+    "typescript": "^5.3.0"
+  }
+}

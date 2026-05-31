@@ -1,0 +1,147 @@
+:root {
+  --spacing: 12px;
+  --radius: 6px;
+  --font-mono: 'SF Mono', Monaco, 'Courier New', monospace;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  color: var(--vscode-foreground);
+  font-family: var(--vscode-font-family);
+  font-size: var(--vscode-font-size);
+  background: var(--vscode-sideBar-background);
+  overflow: hidden;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Tabs */
+.tabs-header {
+  display: flex;
+  background: var(--vscode-sideBarSectionHeader-background);
+  border-bottom: 1px solid var(--vscode-sideBar-border);
+  flex-shrink: 0;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: none;
+  color: var(--vscode-descriptionForeground);
+  cursor: pointer;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-btn.active {
+  color: var(--vscode-foreground);
+  border-bottom-color: var(--vscode-panelTitle-activeBorder);
+}
+
+.tab-content {
+  display: none;
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--spacing);
+}
+
+.tab-content.active {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat Messages */
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.message {
+  padding: 10px;
+  border-radius: var(--radius);
+  max-width: 95%;
+  line-height: 1.5;
+}
+
+.message.user {
+  align-self: flex-end;
+  background: var(--vscode-button-secondaryBackground);
+  color: var(--vscode-button-secondaryForeground);
+}
+
+.message.agent {
+  align-self: flex-start;
+  background: var(--vscode-editorWidget-background);
+  border: 1px solid var(--vscode-widget-border);
+}
+
+/* Agent Cards */
+.agent-card {
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 4px;
+  background: var(--vscode-welcomePage-tileBackground);
+  border: 1px solid var(--vscode-widget-border);
+  font-size: 12px;
+}
+
+.agent-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.agent-card.routing { border-left: 3px solid var(--vscode-debugIcon-breakpointForeground); }
+.agent-card.fitness.pro { border-left: 3px solid var(--vscode-testing-iconPassed); }
+
+/* Input Area */
+.input-container {
+  padding: var(--spacing);
+  background: var(--vscode-sideBar-background);
+  border-top: 1px solid var(--vscode-sideBar-border);
+  flex-shrink: 0;
+}
+
+#chat-input {
+  width: 100%;
+  background: var(--vscode-input-background);
+  color: var(--vscode-input-foreground);
+  border: 1px solid var(--vscode-input-border);
+  border-radius: var(--radius);
+  padding: 8px;
+  resize: none;
+  min-height: 60px;
+  font-family: inherit;
+  outline: none;
+}
+
+#chat-input:focus {
+  border-color: var(--vscode-focusBorder);
+}
+
+/* Terminal View */
+.terminal-view {
+  background: var(--vscode-terminal-background);
+  color: var(--vscode-terminal-foreground);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 8px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* ✅ END OF pro-sidebar.css */
