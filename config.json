@@ -1,0 +1,25 @@
+{
+  "niche": "general e-commerce",
+  "geography": "global",
+  "your_store_url": null,
+  "competitors": [],
+  "trend_keywords": [
+    "e-commerce AI shopping trends 2026",
+    "agentic commerce retail",
+    "online retail consumer trends"
+  ],
+  "competitor_search_templates": [
+    "{niche} competitor pricing strategy 2026",
+    "{niche} discount offers free shipping"
+  ],
+  "voc_search_templates": [
+    "{niche} customer complaints reviews",
+    "{niche} reddit shopping experience problems",
+    "online shopping delivery refund pain points 2026"
+  ],
+  "alert_rules": {
+    "price_drop_pct": 8,
+    "new_trend_confidence_min": "medium"
+  },
+  "max_search_results_per_query": 5
+}
