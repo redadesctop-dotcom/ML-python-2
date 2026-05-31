@@ -1,0 +1,124 @@
+{
+  "timestamp": "2026-05-30 09:40:41",
+  "total_tests": 9,
+  "passed": 5,
+  "failed": 4,
+  "results": [
+    {
+      "name": "Ollama Connectivity",
+      "category": "infrastructure",
+      "passed": true,
+      "duration_ms": 31918.917894363403,
+      "error": null,
+      "metrics": {
+        "response_length": 2
+      }
+    },
+    {
+      "name": "All Model Tiers",
+      "category": "models",
+      "passed": false,
+      "duration_ms": 22869.139671325684,
+      "error": "Only 1/3 models responsive",
+      "metrics": {
+        "tested_models": [
+          "qwen2.5:3b"
+        ],
+        "success_rate": 0.3333333333333333
+      }
+    },
+    {
+      "name": "Orchestration Pipeline (8 Agents)",
+      "category": "orchestration",
+      "passed": true,
+      "duration_ms": 11368.011474609375,
+      "error": null,
+      "metrics": {
+        "agents_activated": 8,
+        "decisions_made": 8
+      }
+    },
+    {
+      "name": "Memory Engine (3 Layers)",
+      "category": "memory",
+      "passed": true,
+      "duration_ms": 6.000518798828125,
+      "error": null,
+      "metrics": {
+        "episodic_count": 2,
+        "semantic_count": 1,
+        "working_count": 1
+      }
+    },
+    {
+      "name": "Web Search Arm",
+      "category": "tools",
+      "passed": false,
+      "duration_ms": 402.8198719024658,
+      "error": "",
+      "metrics": {
+        "results_found": 0,
+        "duration_ms": 399.183
+      }
+    },
+    {
+      "name": "Terminal Arm",
+      "category": "tools",
+      "passed": false,
+      "duration_ms": 41.78047180175781,
+      "error": "",
+      "metrics": {
+        "output_length": 0,
+        "duration_ms": 41.781
+      }
+    },
+    {
+      "name": "File I/O Arm",
+      "category": "tools",
+      "passed": true,
+      "duration_ms": 9.40251350402832,
+      "error": null,
+      "metrics": {
+        "write_duration_ms": 4.386,
+        "read_duration_ms": 4.018
+      }
+    },
+    {
+      "name": "Code Synthesis Arm",
+      "category": "tools",
+      "passed": false,
+      "duration_ms": 30.427217483520508,
+      "error": "Code synthesis failed: Valid code rejected: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\\\Users\\\\AL-JAW~1\\\\AppData\\\\Local\\\\Temp\\\\tmp3ww7vfsf.py'",
+      "metrics": {}
+    },
+    {
+      "name": "Local-Only Enforcement",
+      "category": "security",
+      "passed": true,
+      "duration_ms": 2.003908157348633,
+      "error": null,
+      "metrics": {
+        "blocked_endpoints": 3,
+        "total_tested": 3
+      }
+    }
+  ],
+  "system_health": {
+    "orchestrator_stats": {},
+    "memory_health": {
+      "episodic_count": 2,
+      "semantic_count": 1,
+      "working_count": 1,
+      "episodic_avg_importance": 1.0,
+      "semantic_summary": "- test_concept: 2 keywords",
+      "episodic_summary": "[SUCCESS] Test input... via test_router (qwen2.5:14b)\n[SUCCESS] Test input... via test_router (qwen2.5:14b)"
+    },
+    "tools_health": {
+      "total_executions": 5,
+      "successful": 2,
+      "failed": 3,
+      "avg_duration_ms": 95.959,
+      "reversible_count": 1
+    }
+  }
+}

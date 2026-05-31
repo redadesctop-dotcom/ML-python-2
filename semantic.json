@@ -1,0 +1,14 @@
+[
+  {
+    "id": "d19d6c04e4e69bdc",
+    "concept": "test_concept",
+    "content": "Test knowledge",
+    "keywords": [
+      "test",
+      "verification"
+    ],
+    "importance": 0.9,
+    "created_at": 1780122424.2687662,
+    "reference_count": 1
+  }
+]
