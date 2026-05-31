@@ -1,0 +1,125 @@
+2026-05-21 22:34:54,586 [INFO] tools.knowledge_base: Knowledge base initialised at C:\Users\al-jawhara\Desktop\ML-paython\market_intelligence_agent\knowledge_store\intelligence.db
+2026-05-21 22:35:58,931 [INFO] tools.knowledge_base: Knowledge base initialised at C:\Users\al-jawhara\Desktop\ML-paython\market_intelligence_agent\knowledge_store\intelligence.db
+2026-05-21 22:35:59,196 [INFO] orchestrator: ============================================================
+2026-05-21 22:35:59,196 [INFO] orchestrator: INTELLIGENCE CYCLE #1 — 2026-05-21T19:35:59.192630+00:00
+2026-05-21 22:35:59,197 [INFO] orchestrator: ============================================================
+2026-05-21 22:35:59,200 [INFO] agents.trend_spotter: [TrendSpotter] Running with 6 keywords: ['best new gadgets 2025', 'electronics market trends', 'consumer electronics rising demand', 'upcoming smartphone releases', 'wearable tech trends', 'AI chip consumer devices']
+2026-05-21 22:35:59,202 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Apple
+2026-05-21 22:35:59,202 [INFO] agents.voc_analyzer: [VOCAnalyzer] Starting customer voice extraction
+2026-05-21 22:36:09,624 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Samsung
+2026-05-21 22:36:17,786 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Anker
+2026-05-21 22:36:20,189 [INFO] agents.voc_analyzer: [VOCAnalyzer] Done. Sentiment=0.50 (Neutral), pain=0, desires=0
+2026-05-21 22:36:21,799 [INFO] agents.trend_spotter: [TrendSpotter] Found 0 qualifying trends
+2026-05-21 22:36:30,635 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Sony
+2026-05-21 22:36:40,113 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Bose
+2026-05-21 22:36:51,398 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Done. 5 profiles, 0 alerts
+2026-05-21 22:36:51,398 [INFO] alert_engine: [AlertEngine] 0 alerts generated (0 critical, 0 warning, 0 info)
+2026-05-21 22:36:51,405 [INFO] tools.self_learning: Self-learning: skipping (cycle 0 < 2)
+2026-05-21 22:39:04,713 [INFO] tools.knowledge_base: Knowledge base initialised at C:\Users\al-jawhara\Desktop\ML-paython\market_intelligence_agent\knowledge_store\intelligence.db
+2026-05-21 22:39:04,740 [INFO] orchestrator: ============================================================
+2026-05-21 22:39:04,740 [INFO] orchestrator: INTELLIGENCE CYCLE #1 — 2026-05-21T19:39:04.735391+00:00
+2026-05-21 22:39:04,741 [INFO] orchestrator: ============================================================
+2026-05-21 22:39:04,743 [INFO] agents.trend_spotter: [TrendSpotter] Running with 6 keywords: ['best new gadgets 2025', 'electronics market trends', 'consumer electronics rising demand', 'upcoming smartphone releases', 'wearable tech trends', 'AI chip consumer devices']
+2026-05-21 22:39:04,744 [INFO] agents.voc_analyzer: [VOCAnalyzer] Starting customer voice extraction
+2026-05-21 22:39:04,744 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Apple
+2026-05-21 22:39:15,466 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Samsung
+2026-05-21 22:39:24,919 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Anker
+2026-05-21 22:39:26,466 [INFO] agents.trend_spotter: [TrendSpotter] Found 0 qualifying trends
+2026-05-21 22:39:26,829 [INFO] agents.voc_analyzer: [VOCAnalyzer] Done. Sentiment=0.50 (Neutral), pain=0, desires=0
+2026-05-21 22:39:34,243 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Sony
+2026-05-21 22:39:44,121 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Bose
+2026-05-21 22:39:48,590 [WARNING] tools.web_search: DuckDuckGo search failed for 'Bose pricing': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:39:53,156 [WARNING] tools.web_search: DuckDuckGo search failed for 'Bose new headphones': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:39:57,744 [WARNING] tools.web_search: DuckDuckGo search failed for 'Bose reviews 2025': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:39:57,776 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Done. 5 profiles, 0 alerts
+2026-05-21 22:39:57,776 [INFO] alert_engine: [AlertEngine] 0 alerts generated (0 critical, 0 warning, 0 info)
+2026-05-21 22:39:57,784 [INFO] tools.self_learning: Self-learning: skipping (cycle 0 < 2)
+2026-05-21 22:39:57,803 [INFO] orchestrator: [Orchestrator] Cycle #1 complete in 53.1s — 0 alerts
+2026-05-21 22:40:50,394 [INFO] tools.knowledge_base: Knowledge base initialised at C:\Users\al-jawhara\Desktop\ML-paython\market_intelligence_agent\knowledge_store\intelligence.db
+2026-05-21 22:40:50,417 [INFO] orchestrator: ============================================================
+2026-05-21 22:40:50,417 [INFO] orchestrator: INTELLIGENCE CYCLE #2 — 2026-05-21T19:40:50.413296+00:00
+2026-05-21 22:40:50,417 [INFO] orchestrator: ============================================================
+2026-05-21 22:40:50,420 [INFO] agents.trend_spotter: [TrendSpotter] Running with 6 keywords: ['best new gadgets 2025', 'electronics market trends', 'consumer electronics rising demand', 'upcoming smartphone releases', 'wearable tech trends', 'AI chip consumer devices']
+2026-05-21 22:40:50,420 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Apple
+2026-05-21 22:40:50,421 [INFO] agents.voc_analyzer: [VOCAnalyzer] Starting customer voice extraction
+2026-05-21 22:40:53,972 [WARNING] tools.web_search: DuckDuckGo search failed for 'Apple product news': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:40:54,289 [WARNING] tools.web_search: DuckDuckGo search failed for 'electronics complaints Reddit 2025': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:40:55,178 [WARNING] tools.web_search: DuckDuckGo search failed for 'best new gadgets 2025 Electronics & Gadgets': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:40:57,131 [WARNING] tools.web_search: DuckDuckGo search failed for 'best gadgets user reviews 2025': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:40:57,803 [WARNING] tools.web_search: DuckDuckGo search failed for 'Apple pricing 2025': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:40:59,856 [WARNING] tools.web_search: DuckDuckGo search failed for 'electronics market trends Electronics & Gadgets': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:01,295 [WARNING] tools.web_search: DuckDuckGo search failed for 'Apple reviews': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:01,880 [WARNING] tools.web_search: DuckDuckGo search failed for 'smartphone problems customers': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:01,958 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Samsung
+2026-05-21 22:41:04,533 [WARNING] tools.web_search: DuckDuckGo search failed for 'consumer electronics rising demand Electronics & Gadgets': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:04,867 [WARNING] tools.web_search: DuckDuckGo search failed for 'what do customers want in gadgets': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:06,384 [WARNING] tools.web_search: DuckDuckGo search failed for 'Samsung deals': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:08,891 [WARNING] tools.web_search: DuckDuckGo search failed for 'electronics negative reviews forum': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:09,118 [WARNING] tools.web_search: DuckDuckGo search failed for 'upcoming smartphone releases Electronics & Gadgets': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:09,435 [WARNING] tools.web_search: DuckDuckGo search failed for 'Samsung new release': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:12,130 [WARNING] tools.web_search: DuckDuckGo search failed for 'wearable tech trends Electronics & Gadgets': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:12,402 [WARNING] tools.web_search: DuckDuckGo search failed for 'consumer electronics wishlist features': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:12,438 [INFO] agents.voc_analyzer: [VOCAnalyzer] Done. Sentiment=0.50 (Neutral), pain=0, desires=0
+2026-05-21 22:41:12,657 [WARNING] tools.web_search: DuckDuckGo search failed for 'Samsung consumer reviews': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:12,686 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Anker
+2026-05-21 22:41:16,178 [WARNING] tools.web_search: DuckDuckGo search failed for 'Anker accessories price': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:16,879 [WARNING] tools.web_search: DuckDuckGo search failed for 'AI chip consumer devices Electronics & Gadgets': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:16,888 [INFO] agents.trend_spotter: [TrendSpotter] Found 0 qualifying trends
+2026-05-21 22:41:19,951 [WARNING] tools.web_search: DuckDuckGo search failed for 'Anker new product': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:24,445 [WARNING] tools.web_search: DuckDuckGo search failed for 'Anker reviews': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:24,500 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Sony
+2026-05-21 22:41:27,618 [WARNING] tools.web_search: DuckDuckGo search failed for 'Sony electronics deals': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:31,933 [WARNING] tools.web_search: DuckDuckGo search failed for 'Sony product launch': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:35,623 [WARNING] tools.web_search: DuckDuckGo search failed for 'Sony customer feedback': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:35,703 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Bose
+2026-05-21 22:41:39,002 [WARNING] tools.web_search: DuckDuckGo search failed for 'Bose pricing': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:42,716 [WARNING] tools.web_search: DuckDuckGo search failed for 'Bose new headphones': 403 Client Error: Forbidden for url: https://html.duckduckgo.com/html/
+2026-05-21 22:41:47,456 [WARNING] tools.web_search: DuckDuckGo search failed for 'Bose reviews 2025': ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-05-21 22:41:48,263 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Done. 5 profiles, 0 alerts
+2026-05-21 22:41:48,263 [INFO] alert_engine: [AlertEngine] 0 alerts generated (0 critical, 0 warning, 0 info)
+2026-05-21 22:41:48,269 [INFO] tools.self_learning: Self-learning: skipping (cycle 1 < 2)
+2026-05-21 22:41:48,620 [INFO] orchestrator: [Orchestrator] Cycle #2 complete in 58.2s — 0 alerts
+2026-05-21 22:42:07,498 [INFO] tools.knowledge_base: Knowledge base initialised at C:\Users\al-jawhara\Desktop\ML-paython\market_intelligence_agent\knowledge_store\intelligence.db
+2026-05-21 22:42:07,520 [INFO] orchestrator: ============================================================
+2026-05-21 22:42:07,521 [INFO] orchestrator: INTELLIGENCE CYCLE #3 — 2026-05-21T19:42:07.515806+00:00
+2026-05-21 22:42:07,521 [INFO] orchestrator: ============================================================
+2026-05-21 22:42:07,523 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Apple
+2026-05-21 22:42:07,523 [INFO] agents.trend_spotter: [TrendSpotter] Running with 6 keywords: ['best new gadgets 2025', 'electronics market trends', 'consumer electronics rising demand', 'upcoming smartphone releases', 'wearable tech trends', 'AI chip consumer devices']
+2026-05-21 22:42:07,524 [INFO] agents.voc_analyzer: [VOCAnalyzer] Starting customer voice extraction
+2026-05-21 22:42:24,139 [WARNING] tools.web_search: DuckDuckGo search failed for 'electronics complaints Reddit 2025': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d854dd0>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:42:25,262 [WARNING] tools.web_search: DuckDuckGo search failed for 'Apple product news': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d868090>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:42:25,666 [WARNING] tools.web_search: DuckDuckGo search failed for 'best new gadgets 2025 Electronics & Gadgets': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d869ed0>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:42:41,701 [WARNING] tools.web_search: DuckDuckGo search failed for 'best gadgets user reviews 2025': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d86b710>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:42:43,010 [WARNING] tools.web_search: DuckDuckGo search failed for 'Apple pricing 2025': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d875490>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:42:43,492 [WARNING] tools.web_search: DuckDuckGo search failed for 'electronics market trends Electronics & Gadgets': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d869690>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:42:58,399 [WARNING] tools.web_search: DuckDuckGo search failed for 'smartphone problems customers': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d857010>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:43:00,829 [WARNING] tools.web_search: DuckDuckGo search failed for 'Apple reviews': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d855890>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:43:01,143 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Samsung
+2026-05-21 22:43:01,699 [WARNING] tools.web_search: DuckDuckGo search failed for 'consumer electronics rising demand Electronics & Gadgets': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d8772d0>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:43:14,991 [WARNING] tools.web_search: DuckDuckGo search failed for 'what do customers want in gadgets': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d878e90>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:43:18,677 [WARNING] tools.web_search: DuckDuckGo search failed for 'Samsung deals': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d87ad10>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:43:19,267 [WARNING] tools.web_search: DuckDuckGo search failed for 'upcoming smartphone releases Electronics & Gadgets': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d875ad0>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:43:32,542 [WARNING] tools.web_search: DuckDuckGo search failed for 'electronics negative reviews forum': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d874390>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:43:36,101 [WARNING] tools.web_search: DuckDuckGo search failed for 'Samsung new release': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d846f50>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:43:37,519 [WARNING] tools.web_search: DuckDuckGo search failed for 'wearable tech trends Electronics & Gadgets': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d8576d0>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:43:50,875 [WARNING] tools.web_search: DuckDuckGo search failed for 'consumer electronics wishlist features': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d86bc90>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:43:50,939 [INFO] agents.voc_analyzer: [VOCAnalyzer] Done. Sentiment=0.50 (Neutral), pain=0, desires=0
+2026-05-21 22:43:52,899 [WARNING] tools.web_search: DuckDuckGo search failed for 'Samsung consumer reviews': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d868f90>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:43:53,050 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Anker
+2026-05-21 22:43:54,724 [WARNING] tools.web_search: DuckDuckGo search failed for 'AI chip consumer devices Electronics & Gadgets': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d87cd90>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:43:54,732 [INFO] agents.trend_spotter: [TrendSpotter] Found 0 qualifying trends
+2026-05-21 22:44:10,028 [WARNING] tools.web_search: DuckDuckGo search failed for 'Anker accessories price': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d855a90>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:44:27,678 [WARNING] tools.web_search: DuckDuckGo search failed for 'Anker new product': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d846d90>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:44:45,617 [WARNING] tools.web_search: DuckDuckGo search failed for 'Anker reviews': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d87bd90>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:44:45,741 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Sony
+2026-05-21 22:45:03,298 [WARNING] tools.web_search: DuckDuckGo search failed for 'Sony electronics deals': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d877fd0>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:45:21,699 [WARNING] tools.web_search: DuckDuckGo search failed for 'Sony product launch': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d874910>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:45:38,497 [WARNING] tools.web_search: DuckDuckGo search failed for 'Sony customer feedback': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d87d310>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:45:38,532 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Scanning: Bose
+2026-05-21 22:45:56,623 [WARNING] tools.web_search: DuckDuckGo search failed for 'Bose pricing': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d878790>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:46:15,133 [WARNING] tools.web_search: DuckDuckGo search failed for 'Bose new headphones': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d87aad0>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:46:32,353 [WARNING] tools.web_search: DuckDuckGo search failed for 'Bose reviews 2025': HTTPSConnectionPool(host='html.duckduckgo.com', port=443): Max retries exceeded with url: /html/ (Caused by ConnectTimeoutError(<HTTPSConnection(host='html.duckduckgo.com', port=443) at 0x1210d879010>, 'Connection to html.duckduckgo.com timed out. (connect timeout=15)'))
+2026-05-21 22:46:32,422 [INFO] agents.competitor_analyzer: [CompetitorAnalyzer] Done. 5 profiles, 0 alerts
+2026-05-21 22:46:32,423 [INFO] alert_engine: [AlertEngine] 0 alerts generated (0 critical, 0 warning, 0 info)
+2026-05-21 22:46:32,469 [INFO] tools.self_learning: Self-learning applied 2 changes
+2026-05-21 22:46:32,487 [INFO] orchestrator: [Orchestrator] Cycle #3 complete in 265.0s — 0 alerts

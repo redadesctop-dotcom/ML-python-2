@@ -1,0 +1,73 @@
+version: '3'
+
+services:
+  # Database
+  db:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_DB=e_commerce
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  # Auth Service
+  auth:
+    build: ./auth
+    ports:
+      - "8081:8081"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=e_commerce
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+    depends_on:
+      - db
+
+  # Cart Service
+  cart:
+    build: ./cart
+    ports:
+      - "8082:8082"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=e_commerce
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+    depends_on:
+      - db
+
+  # Payments Service
+  payments:
+    build: ./payments
+    ports:
+      - "8083:8083"
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_NAME=e_commerce
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - PAYMENT_GATEWAY_API_KEY=YOUR_API_KEY
+    depends_on:
+      - db
+
+  # Admin Dashboard
+  admin-dashboard:
+    build: ./admin-dashboard
+    ports:
+      - "8080:8080"
+    environment:
+      - AUTH_URL=http://auth:8081
+      - CART_URL=http://cart:8082
+      - PAYMENTS_URL=http://payments:8083
+    depends_on:
+      - auth
+      - cart
+      - payments
+
+volumes:
+  db-data:

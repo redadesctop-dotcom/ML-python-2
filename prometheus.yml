@@ -1,0 +1,16 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+rule_files:
+  - "alert_rules.yml"
+
+scrape_configs:
+  - job_name: 'amee_orchestrator'
+    static_configs:
+      - targets: ['localhost:8000', 'localhost:8001']
+    metrics_path: '/metrics'
+  
+  - job_name: 'sidecar_telemetry'
+    static_configs:
+      - targets: ['localhost:8001']

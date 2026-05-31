@@ -1,0 +1,29 @@
+groups:
+  - name: amee_alerts
+    rules:
+      - alert: HighLatency
+        expr: p95_latency_ms > 600
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High latency detected in AMEE cycle"
+          description: "P95 latency is {{ $value }}ms, exceeding 600ms threshold."
+
+      - alert: SafetyBreach
+        expr: safety_score < 0.95
+        for: 0m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Safety invariant breach"
+          description: "Safety score dropped to {{ $value }}, triggering immediate circuit breaker."
+
+      - alert: SidecarOOM
+        expr: process_resident_memory_bytes > 250000000
+        for: 30s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Sidecar Memory Limit Exceeded"
+          description: "Sidecar RAM at {{ $value }} bytes. Auto-remediation triggered."
