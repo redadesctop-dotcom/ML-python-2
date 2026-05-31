@@ -1,0 +1,136 @@
+{
+  "name": "eai-vscode",
+  "displayName": "eAI Assistant",
+  "description": "Intelligent Agentic Development Assistant powered by Evolutionary AI",
+  "version": "1.0.0",
+  "publisher": "eai-team",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "AI",
+    "Programming Languages",
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      {
+        "command": "eai.openChat",
+        "title": "eAI: Open Chat",
+        "category": "eAI"
+      },
+      {
+        "command": "eai.buildProject",
+        "title": "eAI: Build Project",
+        "category": "eAI"
+      },
+      {
+        "command": "eai.generateCode",
+        "title": "eAI: Generate Code",
+        "category": "eAI"
+      },
+      {
+        "command": "eai.runAgentTask",
+        "title": "eAI: Run Agent Task",
+        "category": "eAI"
+      },
+      {
+        "command": "eai.viewAuditLog",
+        "title": "eAI: View Audit Log",
+        "category": "eAI"
+      },
+      {
+        "command": "eai.switchModelTier",
+        "title": "eAI: Switch Model Tier",
+        "category": "eAI"
+      },
+      {
+        "command": "eai.refactorSelection",
+        "title": "eAI: Refactor Selection",
+        "category": "eAI"
+      },
+      {
+        "command": "eai.explainCode",
+        "title": "eAI: Explain Code",
+        "category": "eAI"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "eai-explorer",
+          "title": "eAI Assistant",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "eai-explorer": [
+        {
+          "type": "webview",
+          "id": "eai.sidebar",
+          "name": "eAI Dashboard"
+        }
+      ]
+    },
+    "menus": {
+      "editor/context": [
+        {
+          "command": "eai.refactorSelection",
+          "when": "editorHasSelection",
+          "group": "eai@1"
+        },
+        {
+          "command": "eai.explainCode",
+          "when": "editorHasSelection",
+          "group": "eai@2"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "eAI Assistant",
+      "properties": {
+        "eai.backendUrl": {
+          "type": "string",
+          "default": "http://localhost:8000",
+          "description": "URL of the eAI backend server"
+        },
+        "eai.defaultModelTier": {
+          "type": "string",
+          "enum": [
+            "3b",
+            "14b",
+            "32b",
+            "cloud"
+          ],
+          "default": "14b",
+          "description": "Default LLM model tier to use"
+        },
+        "eai.enableStreaming": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable real-time streaming responses"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/node": "18.x",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "@vscode/vsce": "^3.9.1",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  }
+}
